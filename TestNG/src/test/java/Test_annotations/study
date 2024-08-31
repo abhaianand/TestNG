@@ -1,0 +1,19 @@
+1 test case grouping
+2 test case priority
+3 parallel testing
+4 cross browser testing
+5 test case report
+6 parameterization
+
+
+
+
+TEST -@ annotation
+1 testng execute in alphabetical order
+2 @Test(priority=num) control the order of execution
+3 if you do not set any priority it will consider as zero and execute first the it will go for every other
+4 if two methods have same priority = it will consider alphabetical order
+5 negative value allow for the priority
+6 testing executed only if the test case have annotation
+
+

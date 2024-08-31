@@ -1,0 +1,67 @@
+another way of running test case ---
+
+--------what is xml file --- it is a test suite
+test suite ----->test case ----------> test steps
+xml file-------->class---------------> methods
+
+
+
+
+
+very very important
+Running test case using XML file
+------------------------------------------
+xml can create in two way--- automaticaly or manually
+add xml plugin and run project in tesntng will create a xml file
+
+automaticaly
+----------------
+
+open the xml file and run again it will generate "test output" folder if it is not - go to the edit configuration and in listner add default report and apply
+the run the case
+in "test output" foder there are two important file ----1)emailable report.html  2)index .html
+
+
+manually
+----------
+go to new -- file--name.xml
+first two line should be copy from orgiginal
+* suite
+* test
+* class =package.class name
+
+if you want run multiple test case just add extra <class name = package.class and run th exml
+
+
+suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/abhai/eclipse-workspace/TestNG/TestNG/src/test/java/orangeHRM/OrangeHRM.java">
+        <classes>
+            <class name="orangeHRM.OrangeHRM">    ----->> if we want to run any othere class with the ssame as a group just add extra package.new class and run the xml
+                <methods>
+                    <include name="logo"/>
+                    <include name="login"/>
+                    <include name="logout"/>
+                    <include name="quit_browser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+
+
+why we are creating xml manually
+
+in automatically we only have simple tags in manual we can customize - grouping, parallel testing  we need some more tag which is possible
+with manual process
+
+
+
+
+
+
+
+
+
+
+
