@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/abhai/eclipse-workspace/TestNG/TestNG/src/test/java/Annotations/BforeSuite">
+        <classes>
+            <class name="Annotations.BforeSuite.CS1">
+                <methods>
+                    <include name="abc"/>
+                </methods>
+            </class>
+            <class name="Annotations.BforeSuite.CS2">
+                <methods>
+                    <include name="abc2"/>
+                </methods>
+            </class>
+            <class name="Annotations.BforeSuite.CS3">
+                <methods>
+                    <include name="abc3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="fdgdf">
+        <classes>
+            <class name="Annotations.BforeSuite.CS1">
+                <methods>
+                    <include name="abc"/>
+                </methods>
+            </class>
+            <class name="Annotations.BforeSuite.CS2">
+                <methods>
+                    <include name="abc2"/>
+                </methods>
+            </class>
+            <class name="Annotations.BforeSuite.CS3">
+                <methods>
+                    <include name="abc3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

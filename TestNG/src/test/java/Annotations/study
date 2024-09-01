@@ -1,0 +1,45 @@
+annotation - control the order of the execution
+-lest say you want to run sanity test case
+we maintain multiple  xml
+each xml for each cae
+suite for parallel execution
+suite for parallel execution
+suite for high priority case etc ...
+
+@Test
+ it is for the testcase /test method
+
+
+@BeforeMethod
+@AfterMethod
+-----------------------
+
+this will execute before the test method (@Test)
+there is no rule like if we use beforemethod we should also use aftermethod too
+ in this before and after method, it will repeatedly execute before and after for every @test- how may number of @test we have the before and after
+ will execute same number of time
+
+@BeforeClass
+@AfterClass
+------------------
+
+this will execute before running the class
+before and after class run before all the test and after test , even if we have multiple test inside the class the before/after test do not account it just like beofre/afer method
+it run only one times but bf/af methods run for every @test bf and after
+
+@BeforeTest
+@AfterTest
+-------------
+this will run on xml file, if we want to run any test before the test in xml file we should keep this annotation in any methods,
+so if we run the xml file, the before test will execute first
+
+if you want run any thing before running and after running the class it should mention with Before/AfterTest in any of the class and update the xml
+and run the xml
+if you have more number of class in a package before running the package you want to run something
+you can put it in the BeforeTest/AfterTest
+
+
+
+
+@BeforeSuite
+@AfterSuite

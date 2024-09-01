@@ -1,4 +1,4 @@
-package Test_annotations;
+package Annotations.Test_annotations;
 import org.testng.annotations.Test;
 
 public class Test_Annotation {

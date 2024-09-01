@@ -1,0 +1,24 @@
+assertion is for verify the test case , by compare the actual and expected output
+even if we have if else condition , it will return the code statement as true or flase , but in testng report it shows as pass ,
+inorder to make test case status as failed in testng report we go fore assertion
+
+we have two type of assertion
+
+Hard assertion and Soft assertion
+asser.equals,assert.notequal,assert.true,assert.false, assert.fail(always fail)
+
+1 Hard assertion
+-------------------
+Every line of code after assertion will be terminated if the assertion fails
+Mostly use in automation
+Hard assertion you can call by direct class , becose it is a Static class
+
+2 Soft assertion
+------------------
+Even if the assert fail all the code after the assertion will continue its execution
+Soft assertion you can to call by creating the object of softasser class
+because it is not static
+
+in soft assert you have to create object and asl you have to do object.assertAll();  , otherwise it will show pass in test result even if the asser fails
+
+
