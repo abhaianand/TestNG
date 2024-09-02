@@ -1,0 +1,151 @@
+parameterization , passing test data during running
+data drivern testing
+using xml file we can pass parameter to test -- ed parallel  testing
+
+1 @dataproivde - data driven testing
+
+2 using xml - parallel testing
+
+1 @dataproivde - data driven testing
+-----------------------------------------
+
+for login i want to repeat the with some user id and password--using data provider annotation
+
+@Dataprovide -- the function od data provider is creating and return the data
+void login data()
+{
+}
+//for every data provider annotation there should be name for the dataprovider annotation
+//in normal automation we create a separate class for data provider and we refer from the same class
+  @DataProvider(name = "login_data_provider",indices ={0,1,5}) // so only first two rows of data will be passed to test case and 5th row aslo pass
+    Object[][] loginData(){
+
+        Object data [][] = { {"abc@gmail.com","test@123"},
+                              {"xyz@gmail.com","test123"},
+                             {"babu@gmail.com","noway@123"},
+                           {"pavanol123@gmail.com","test@123"}};
+        return data;
+
+
+
+
+2 using xml - parallel testing
+------------------------------------
+
+        <?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+        <suite name="All Test Suite">
+            <test verbose="2" preserve-order="true" name="C:/Users/abhai/eclipse-workspace/TestNG/TestNG/src/test/java/parameterization/Parallal_testing_xml.java">
+                <parameter name="browser" value="chrome"></parameter>
+                <classes>
+                    <class name="parameterization.Parallal_testing_xml">
+                        <methods>
+                            <include name="testlogo"/>
+                            <include name="testingTitle"/>
+                            <include name="testingURL"/>
+                        </methods>
+                    </class>
+                </classes>
+            </test>
+        </suite>
+         switch (br){ //pass the paramenter value from the xml file for cross browser testing
+                    case "Chrome":driver = new ChromeDriver();break;
+                    case "Edge": driver = new EdgeDriver();break;
+                    case "Firefox":driver = new FirefoxDriver();break;
+                    default: System.out.println("Browser name mismatch");
+
+                }
+                driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+                driver.manage().window().maximize();
+                driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/abhai/eclipse-workspace/TestNG/TestNG/src/test/java/parameterization/Parallal_testing_xml.java">
+        <parameter name="browser_name" value="Firefox"></parameter>
+        <classes>
+            <class name="parameterization.Parallal_testing_xml">
+                <methods>
+                    <include name="testlogo"/>
+                    <include name="testingTitle"/>
+                    <include name="testingURL"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="C:/Users/abhai/eclipse-workspace/TestNG/TestNG/src/test/java/parameterization/Parallal_testing_xml.java">
+        <parameter name="browser_name" value="Chrome"></parameter>
+        <classes>
+            <class name="parameterization.Parallal_testing_xml">
+                <methods>
+                    <include name="testlogo"/>
+                    <include name="testingTitle"/>
+                    <include name="testingURL"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+---------------------------------------------
+if i want to run test case in every browser - repeat the test in diff browser - serial execution , one browser after another
+----------------------------------------------
+    <test verbose="2" preserve-order="true" name="C:/Users/abhai/eclipse-workspace/TestNG/TestNG/src/test/java/parameterization/Parallal_testing_xml.java">
+        <parameter name="browser_name" value="Edge"></parameter>
+        <classes>
+            <class name="parameterization.Parallal_testing_xml">
+                <methods>
+                    <include name="testlogo"/>
+                    <include name="testingTitle"/>
+                    <include name="testingURL"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+
+if i want to run the case parallel in every browser  - in suite level
+--------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests">
+    <test verbose="2" preserve-order="true" name="Firefox:">
+        <parameter name="browser_name" value="Firefox"></parameter>
+        <classes>
+            <class name="parameterization.Parallal_testing_xml">
+                <methods>
+                    <include name="testlogo"/>
+                    <include name="testingTitle"/>
+                    <include name="testingURL"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Chrome">
+        <parameter name="browser_name" value="Chrome"></parameter>
+        <classes>
+            <class name="parameterization.Parallal_testing_xml">
+                <methods>
+                    <include name="testlogo"/>
+                    <include name="testingTitle"/>
+                    <include name="testingURL"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Edge">
+        <parameter name="browser_name" value="Edge"></parameter>
+        <classes>
+            <class name="parameterization.Parallal_testing_xml">
+                <methods>
+                    <include name="testlogo"/>
+                    <include name="testingTitle"/>
+                    <include name="testingURL"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+if we name parallel in suite level and select , all the test will run in parallel
+but if you want to run any class in parallel , run write the parallel in test tag and select value as class

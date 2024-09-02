@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/abhai/eclipse-workspace/TestNG/TestNG/src/test/java/Annotations/BforeSuite">
+<suite name="All Test Suite" parallel="tests">
+    <test verbose="2" preserve-order="true" name="Firefox:">
+        <parameter name="browser_name" value="Firefox"></parameter>
         <classes>
-            <class name="Annotations.BforeSuite.CS1">
+            <class name="parameterization.Parallal_testing_xml">
                 <methods>
-                    <include name="abc"/>
-                </methods>
-            </class>
-            <class name="Annotations.BforeSuite.CS2">
-                <methods>
-                    <include name="abc2"/>
-                </methods>
-            </class>
-            <class name="Annotations.BforeSuite.CS3">
-                <methods>
-                    <include name="abc3"/>
+                    <include name="testlogo"/>
+                    <include name="testingTitle"/>
+                    <include name="testingURL"/>
                 </methods>
             </class>
         </classes>
     </test>
-    <test verbose="2" preserve-order="true" name="fdgdf">
+    <test verbose="2" preserve-order="true" name="Chrome">
+        <parameter name="browser_name" value="Chrome"></parameter>
         <classes>
-            <class name="Annotations.BforeSuite.CS1">
+            <class name="parameterization.Parallal_testing_xml">
                 <methods>
-                    <include name="abc"/>
-                </methods>
-            </class>
-            <class name="Annotations.BforeSuite.CS2">
-                <methods>
-                    <include name="abc2"/>
-                </methods>
-            </class>
-            <class name="Annotations.BforeSuite.CS3">
-                <methods>
-                    <include name="abc3"/>
+                    <include name="testlogo"/>
+                    <include name="testingTitle"/>
+                    <include name="testingURL"/>
                 </methods>
             </class>
         </classes>
     </test>
+
+    <test verbose="2" preserve-order="true" name="Edge">
+        <parameter name="browser_name" value="Edge"></parameter>
+        <classes>
+            <class name="parameterization.Parallal_testing_xml">
+                <methods>
+                    <include name="testlogo"/>
+                    <include name="testingTitle"/>
+                    <include name="testingURL"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
 </suite>

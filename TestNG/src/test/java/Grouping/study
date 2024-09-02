@@ -1,0 +1,64 @@
+grouping
+---------------
+sanity test group(basic functionality test)
+regression test group (all general test case )
+functional test group (all test cases)
+during automation scripting mention the tag , sanity, regression,or functional after that we execute the group from the xml file
+requirement
+---------------
+login by facebbok - sanity
+login by email - sanity
+login by twitter - sanity
+signup by facebook - regression
+signup by twitter - regression
+signup by email - regression
+payment in rupees - sanity,regression,(functional)
+payment in dollars - sanity ,regression, (functional)
+syntax
+---------
+@Test(Group = {"sanity","regression"})
+and the go xml and run the same
+before starting the class add grouping class
+<groups>
+<run>
+<include name ="sanity"/>
+</run>
+</group>
+----------------
+<suite name="group">
+    <test name="groupingtest">
+        <groups>
+        <run>
+            <include name="sanity"/>
+    </run>
+    </groups>
+    <classes>
+        <class name="Grouping.LoginTest"/>
+        <class name="Grouping.PaymentTest"/>
+        <class name="Grouping.SignupTest"/>
+        in above method all the group have name include sanity will run , so if i want to run only sanity "exclude tag"
+so regression and sanity combo will be removed any only dedicated sanity will run
+<suite name="group">
+    <test name="groupingtest">
+        <groups>
+        <run>
+            <include name="sanity"/>
+            <exclude name="regression">
+            </exclude>
+    </run>
+    </groups>
+    <classes>
+        <class name="Grouping.LoginTest"/>
+        <class name="Grouping.PaymentTest"/>
+        <class name="Grouping.SignupTest"/>
+
+
+1 all sanity <include name ="sanity">
+2 all regression <include name ="regression">
+3 only sanity <include name = "sanity"><exclude name = "regression">
+4 only regression <include name = "regression"><exclude name = "sanity">
+5 all methods which are belongs to both sanity and regression (methods which are under both sanity and regression case)
+
+
+
+

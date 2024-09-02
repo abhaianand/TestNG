@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="TestNG(failed)">
     <classes>
-      <class name="Assertions.Abhai">
+      <class name="parameterization.Parallal_testing_xml">
         <methods>
-          <include name="method"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="testlogo"/>
         </methods>
-      </class> <!-- Assertions.Abhai -->
+      </class> <!-- parameterization.Parallal_testing_xml -->
     </classes>
   </test> <!-- TestNG(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

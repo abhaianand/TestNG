@@ -1,56 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-02T01:00:00 IST" name="Default Suite" finished-at="2024-09-02T01:00:00 IST" duration-ms="65">
+  <suite started-at="2024-09-03T00:53:27 IST" name="All Test Suite" finished-at="2024-09-03T00:53:39 IST" duration-ms="11613">
     <groups>
     </groups>
-    <test started-at="2024-09-02T01:00:00 IST" name="TestNG" finished-at="2024-09-02T01:00:00 IST" duration-ms="65">
-      <class name="Assertions.Abhai">
-        <test-method signature="method()[pri:0, instance:Assertions.Abhai@69930714]" started-at="2024-09-02T01:00:00 IST" name="method" finished-at="2024-09-02T01:00:00 IST" duration-ms="15" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [OK] but found [Haii]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [OK] but found [Haii]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at Assertions.Abhai.method(Abhai.java:16)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+    <test started-at="2024-09-03T00:53:27 IST" name="Chrome" finished-at="2024-09-03T00:53:36 IST" duration-ms="8811">
+      <class name="parameterization.Parallal_testing_xml">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:parameterization.Parallal_testing_xml@4b14c583]" started-at="2024-09-03T00:53:27 IST" name="setup" finished-at="2024-09-03T00:53:33 IST" duration-ms="5366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- method -->
-      </class> <!-- Assertions.Abhai -->
-    </test> <!-- TestNG -->
-  </suite> <!-- Default Suite -->
+        </test-method> <!-- setup -->
+        <test-method signature="testlogo()[pri:1, instance:parameterization.Parallal_testing_xml@4b14c583]" started-at="2024-09-03T00:53:33 IST" name="testlogo" finished-at="2024-09-03T00:53:36 IST" duration-ms="3109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testlogo -->
+        <test-method signature="testingTitle()[pri:2, instance:parameterization.Parallal_testing_xml@4b14c583]" started-at="2024-09-03T00:53:36 IST" name="testingTitle" finished-at="2024-09-03T00:53:36 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testingTitle -->
+        <test-method signature="testingURL()[pri:3, instance:parameterization.Parallal_testing_xml@4b14c583]" started-at="2024-09-03T00:53:36 IST" name="testingURL" finished-at="2024-09-03T00:53:36 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testingURL -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:parameterization.Parallal_testing_xml@4b14c583]" started-at="2024-09-03T00:53:36 IST" name="tearDown" finished-at="2024-09-03T00:53:36 IST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- parameterization.Parallal_testing_xml -->
+    </test> <!-- Chrome -->
+    <test started-at="2024-09-03T00:53:27 IST" name="Edge" finished-at="2024-09-03T00:53:36 IST" duration-ms="8874">
+      <class name="parameterization.Parallal_testing_xml">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:parameterization.Parallal_testing_xml@4ddced80]" started-at="2024-09-03T00:53:27 IST" name="setup" finished-at="2024-09-03T00:53:32 IST" duration-ms="5175" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testlogo()[pri:1, instance:parameterization.Parallal_testing_xml@4ddced80]" started-at="2024-09-03T00:53:32 IST" name="testlogo" finished-at="2024-09-03T00:53:35 IST" duration-ms="3073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testlogo -->
+        <test-method signature="testingTitle()[pri:2, instance:parameterization.Parallal_testing_xml@4ddced80]" started-at="2024-09-03T00:53:35 IST" name="testingTitle" finished-at="2024-09-03T00:53:36 IST" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testingTitle -->
+        <test-method signature="testingURL()[pri:3, instance:parameterization.Parallal_testing_xml@4ddced80]" started-at="2024-09-03T00:53:36 IST" name="testingURL" finished-at="2024-09-03T00:53:36 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testingURL -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:parameterization.Parallal_testing_xml@4ddced80]" started-at="2024-09-03T00:53:36 IST" name="tearDown" finished-at="2024-09-03T00:53:36 IST" duration-ms="481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- parameterization.Parallal_testing_xml -->
+    </test> <!-- Edge -->
+    <test started-at="2024-09-03T00:53:27 IST" name="Firefox:" finished-at="2024-09-03T00:53:39 IST" duration-ms="11613">
+      <class name="parameterization.Parallal_testing_xml">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:parameterization.Parallal_testing_xml@147ed70f]" started-at="2024-09-03T00:53:27 IST" name="setup" finished-at="2024-09-03T00:53:35 IST" duration-ms="7876" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testlogo()[pri:1, instance:parameterization.Parallal_testing_xml@147ed70f]" started-at="2024-09-03T00:53:35 IST" name="testlogo" finished-at="2024-09-03T00:53:38 IST" duration-ms="3062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testlogo -->
+        <test-method signature="testingTitle()[pri:2, instance:parameterization.Parallal_testing_xml@147ed70f]" started-at="2024-09-03T00:53:38 IST" name="testingTitle" finished-at="2024-09-03T00:53:38 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testingTitle -->
+        <test-method signature="testingURL()[pri:3, instance:parameterization.Parallal_testing_xml@147ed70f]" started-at="2024-09-03T00:53:38 IST" name="testingURL" finished-at="2024-09-03T00:53:38 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testingURL -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:parameterization.Parallal_testing_xml@147ed70f]" started-at="2024-09-03T00:53:38 IST" name="tearDown" finished-at="2024-09-03T00:53:39 IST" duration-ms="643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- parameterization.Parallal_testing_xml -->
+    </test> <!-- Firefox: -->
+  </suite> <!-- All Test Suite -->
 </testng-results>

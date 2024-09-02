@@ -1,0 +1,15 @@
+in testing if any one of the test case fail all the test case associated with the
+
+dependancy
+-------------
+
+but in test ng if we dont define dependency all he @test will execute even if the main test case faill, so we need to impliment dependencymethod  in test case
+so if the dependancy case fail all the case associated with the case skipp which will reduce the time of execuation
+
+***dependsOnMethods={",ethodname1","method2","methodname3"}****
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+annotations
+------------
+
+*Before suite
+*Before test
+*Before classs
+* Before method
+* @Test
+* @Data provider
+* @parameters()  -@parameters({"name"}) - for cross browser testing
+
+attribute
+----------
+* priority
+* dataprovider
+* group
+* dependsOnMethods
