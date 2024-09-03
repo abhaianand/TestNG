@@ -1,0 +1,32 @@
+what is listener
+
+from test result if you want to perform some action we use listeners
+Testng interface - Itest listeners , on test success,on test pass, on test fail
+listener class is for post execution action
+there are 2 ways to implement listener class
+-----------------------------------------------
+method 1
+class mylistner implements ITestlistner{ //itest listner is interface
+}
+method 2
+class mylistner extends TestlistnerAdapter{ //testlistneradapter is a class
+}
+--> if you choose second method , extends the class, you have to over ride the methods which inside the parent class
+--> if you choose method 1 , just interface , you can call the methode and write the code you want inside it , and it will execute
+ --->listner can run through the class and run through the xml , if you run through the xml after suite write listner tag
+ ----> if you use the listner in test case class you have to use the listern in every est case class which ned more effort , but instead of that a single linke code in xml after suite will give you the
+ same result
+ ---> listner can write in a separate class it wll automaticall call all the methods durin execution , like before test start, during test fail, during test pass, during test skip, after text execution etc...
+---> by using lsitern we can customise the report of testing using 3rd party extend report methods
+-->onTestStart,onTestSuccess,onTestFailure,onTestSkipped,onStart,onFinish
+on start- before starting all the test case
+
+EXTEND REPORT
+---------------
+3rd party dependency maven
+-- extends report using listner class
+    public ExtentSparkReporter sparkreport; //UI of the report
+    public ExtentReports extent; // common project information
+    public ExtentTest test;//creating test case entry and update status of the test methods
+    on finish is must otherwise the report not generated
+

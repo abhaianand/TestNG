@@ -1,42 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" parallel="tests">
-    <test verbose="2" preserve-order="true" name="Firefox:">
-        <parameter name="browser_name" value="Firefox"></parameter>
+<suite name="All Test Suite">
+    <listeners><listener class-name="TestNG_listners_ExtendReport.Extendreport_Manager"></listener>
+    
+</listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/abhai/eclipse-workspace/TestNG/TestNG/src/test/java/TestNG_listners_ExtendReport">
         <classes>
-            <class name="parameterization.Parallal_testing_xml">
+            <class name="TestNG_listners_ExtendReport.OrangeHRM">
                 <methods>
-                    <include name="testlogo"/>
-                    <include name="testingTitle"/>
-                    <include name="testingURL"/>
+                    <include name="logo"/>
+                    <include name="login"/>
+                    <include name="appurl"/>
+                    <include name="testhomepageTitle"/>
+                    <include name="logout"/>
                 </methods>
             </class>
         </classes>
     </test>
-    <test verbose="2" preserve-order="true" name="Chrome">
-        <parameter name="browser_name" value="Chrome"></parameter>
-        <classes>
-            <class name="parameterization.Parallal_testing_xml">
-                <methods>
-                    <include name="testlogo"/>
-                    <include name="testingTitle"/>
-                    <include name="testingURL"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-
-    <test verbose="2" preserve-order="true" name="Edge">
-        <parameter name="browser_name" value="Edge"></parameter>
-        <classes>
-            <class name="parameterization.Parallal_testing_xml">
-                <methods>
-                    <include name="testlogo"/>
-                    <include name="testingTitle"/>
-                    <include name="testingURL"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-
 </suite>

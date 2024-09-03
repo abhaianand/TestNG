@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="C:/Users/abhai/eclipse-workspace/TestNG/TestNG/src/test/java/parameterization/Parallal_testing_xml.java(failed)">
-    <parameter name="browser_name" value="Firefox"/>
+  <listeners>
+    <listener class-name="TestNG_listners_ExtendReport.Extendreport_Manager"/>
+  </listeners>
+  <test thread-count="5" name="C:/Users/abhai/eclipse-workspace/TestNG/TestNG/src/test/java/TestNG_listners_ExtendReport(failed)">
     <classes>
-      <class name="parameterization.Parallal_testing_xml">
+      <class name="TestNG_listners_ExtendReport.OrangeHRM">
         <methods>
           <include name="setup"/>
-          <include name="testingTitle"/>
-          <include name="tearDown"/>
-          <include name="testlogo"/>
-          <include name="testingURL"/>
+          <include name="quit_browser"/>
+          <include name="logout"/>
+          <include name="login"/>
+          <include name="appurl"/>
+          <include name="testhomepageTitle"/>
         </methods>
-      </class> <!-- parameterization.Parallal_testing_xml -->
+      </class> <!-- TestNG_listners_ExtendReport.OrangeHRM -->
     </classes>
-  </test> <!-- C:/Users/abhai/eclipse-workspace/TestNG/TestNG/src/test/java/parameterization/Parallal_testing_xml.java(failed) -->
+  </test> <!-- C:/Users/abhai/eclipse-workspace/TestNG/TestNG/src/test/java/TestNG_listners_ExtendReport(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->
