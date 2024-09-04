@@ -1,0 +1,8 @@
+POM
+------
+advantage - code reuse , maintainability , less complex code
+
+1 without PageFactory
+2 with PageFactory
+
+POM contains - constructor , locators ,action methods

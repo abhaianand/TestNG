@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="TestNG_listners_ExtendReport.Extendreport_Manager"/>
-  </listeners>
-  <test thread-count="5" name="C:/Users/abhai/eclipse-workspace/TestNG/TestNG/src/test/java/TestNG_listners_ExtendReport(failed)">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestNG(failed)">
     <classes>
-      <class name="TestNG_listners_ExtendReport.OrangeHRM">
+      <class name="pageobjectmodel.TestCase_Login">
         <methods>
           <include name="setup"/>
-          <include name="quit_browser"/>
-          <include name="logout"/>
-          <include name="login"/>
-          <include name="appurl"/>
-          <include name="testhomepageTitle"/>
+          <include name="tearDown"/>
+          <include name="TestLogin"/>
         </methods>
-      </class> <!-- TestNG_listners_ExtendReport.OrangeHRM -->
+      </class> <!-- pageobjectmodel.TestCase_Login -->
     </classes>
-  </test> <!-- C:/Users/abhai/eclipse-workspace/TestNG/TestNG/src/test/java/TestNG_listners_ExtendReport(failed) -->
-</suite> <!-- Failed suite [All Test Suite] -->
+  </test> <!-- TestNG(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

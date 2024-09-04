@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="TestNG(failed)">
     <classes>
-      <class name="TestNG_listners_ExtendReport.OrangeHRM">
+      <class name="pageobjectmodel.TestCase_Login">
         <methods>
-          <include name="login"/>
-          <include name="testhomepageTitle"/>
-          <include name="quit_browser"/>
-          <include name="appurl"/>
           <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="TestLogin"/>
         </methods>
-      </class> <!-- TestNG_listners_ExtendReport.OrangeHRM -->
+      </class> <!-- pageobjectmodel.TestCase_Login -->
     </classes>
   </test> <!-- TestNG(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

@@ -1,152 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="2" failed="1" skipped="2">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-04T00:43:05 IST" name="All Test Suite" finished-at="2024-09-04T00:43:16 IST" duration-ms="10341">
+  <suite started-at="2024-09-04T14:57:21 IST" name="Default Suite" finished-at="2024-09-04T14:57:28 IST" duration-ms="6711">
     <groups>
     </groups>
-    <test started-at="2024-09-04T00:43:05 IST" name="C:/Users/abhai/eclipse-workspace/TestNG/TestNG/src/test/java/TestNG_listners_ExtendReport" finished-at="2024-09-04T00:43:16 IST" duration-ms="10341">
-      <class name="TestNG_listners_ExtendReport.OrangeHRM">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestNG_listners_ExtendReport.OrangeHRM@163e4e87]" started-at="2024-09-04T00:43:06 IST" name="setup" finished-at="2024-09-04T00:43:11 IST" duration-ms="5164" status="PASS">
+    <test started-at="2024-09-04T14:57:21 IST" name="TestNG" finished-at="2024-09-04T14:57:28 IST" duration-ms="6711">
+      <class name="pageobjectmodel.TestCase_Login">
+        <test-method is-config="true" signature="setup()[pri:0, instance:pageobjectmodel.TestCase_Login@6973bf95]" started-at="2024-09-04T14:57:21 IST" name="setup" finished-at="2024-09-04T14:57:26 IST" duration-ms="4601" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="logo()[pri:1, instance:TestNG_listners_ExtendReport.OrangeHRM@163e4e87]" started-at="2024-09-04T00:43:11 IST" name="logo" finished-at="2024-09-04T00:43:14 IST" duration-ms="3042" status="PASS">
+        <test-method signature="TestLogin()[pri:0, instance:pageobjectmodel.TestCase_Login@6973bf95]" started-at="2024-09-04T14:57:26 IST" name="TestLogin" finished-at="2024-09-04T14:57:28 IST" duration-ms="1825" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logo -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:2, instance:TestNG_listners_ExtendReport.OrangeHRM@163e4e87]" started-at="2024-09-04T00:43:14 IST" name="login" data-provider="datalogin" finished-at="2024-09-04T00:43:15 IST" duration-ms="1549" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- TestLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageobjectmodel.TestCase_Login@6973bf95]" started-at="2024-09-04T14:57:28 IST" name="tearDown" finished-at="2024-09-04T14:57:28 IST" duration-ms="251" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="appurl()[pri:3, instance:TestNG_listners_ExtendReport.OrangeHRM@163e4e87]" started-at="2024-09-04T00:43:15 IST" name="appurl" finished-at="2024-09-04T00:43:15 IST" depends-on-methods="TestNG_listners_ExtendReport.OrangeHRM.login" duration-ms="9" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [ttps://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index] but found [https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [ttps://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index] but found [https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at TestNG_listners_ExtendReport.OrangeHRM.appurl(OrangeHRM.java:44)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- appurl -->
-        <test-method signature="testhomepageTitle()[pri:4, instance:TestNG_listners_ExtendReport.OrangeHRM@163e4e87]" started-at="2024-09-04T00:43:15 IST" name="testhomepageTitle" finished-at="2024-09-04T00:43:15 IST" depends-on-methods="TestNG_listners_ExtendReport.OrangeHRM.appurl" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TestNG_listners_ExtendReport.OrangeHRM.testhomepageTitle() on instance TestNG_listners_ExtendReport.OrangeHRM@163e4e87 depends on not successfully finished methods 
-[TestNG_listners_ExtendReport.OrangeHRM.appurl() on instance TestNG_listners_ExtendReport.OrangeHRM@163e4e87]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestNG_listners_ExtendReport.OrangeHRM.testhomepageTitle() on instance TestNG_listners_ExtendReport.OrangeHRM@163e4e87 depends on not successfully finished methods 
-[TestNG_listners_ExtendReport.OrangeHRM.appurl() on instance TestNG_listners_ExtendReport.OrangeHRM@163e4e87]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testhomepageTitle -->
-        <test-method signature="logout()[pri:5, instance:TestNG_listners_ExtendReport.OrangeHRM@163e4e87]" started-at="2024-09-04T00:43:15 IST" name="logout" finished-at="2024-09-04T00:43:15 IST" depends-on-methods="TestNG_listners_ExtendReport.OrangeHRM.testhomepageTitle" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TestNG_listners_ExtendReport.OrangeHRM.logout() on instance TestNG_listners_ExtendReport.OrangeHRM@163e4e87 depends on not successfully finished methods 
-[TestNG_listners_ExtendReport.OrangeHRM.testhomepageTitle() on instance TestNG_listners_ExtendReport.OrangeHRM@163e4e87]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestNG_listners_ExtendReport.OrangeHRM.logout() on instance TestNG_listners_ExtendReport.OrangeHRM@163e4e87 depends on not successfully finished methods 
-[TestNG_listners_ExtendReport.OrangeHRM.testhomepageTitle() on instance TestNG_listners_ExtendReport.OrangeHRM@163e4e87]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="quit_browser()[pri:0, instance:TestNG_listners_ExtendReport.OrangeHRM@163e4e87]" started-at="2024-09-04T00:43:15 IST" name="quit_browser" finished-at="2024-09-04T00:43:16 IST" duration-ms="249" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit_browser -->
-      </class> <!-- TestNG_listners_ExtendReport.OrangeHRM -->
-    </test> <!-- C:/Users/abhai/eclipse-workspace/TestNG/TestNG/src/test/java/TestNG_listners_ExtendReport -->
-  </suite> <!-- All Test Suite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- pageobjectmodel.TestCase_Login -->
+    </test> <!-- TestNG -->
+  </suite> <!-- Default Suite -->
 </testng-results>
